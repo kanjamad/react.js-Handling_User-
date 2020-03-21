@@ -1,6 +1,8 @@
 
 ![diagram](pics.png "diagram")
 
+app like: https://search-apiunsplash.netlify.com/
+
 ## User Stories
 User stories
 what we want to do is show a text input at the very top center of the screen.
@@ -20,3 +22,5 @@ Not a lot of styling just kind of want to focus on
 ## Technologies Used
 * React.js
 * semantic-ui
+
+![diagram](pics.gif "diagram")
