@@ -6,6 +6,11 @@ import ImageList from './ImageList';
 
 class App extends React.Component{
     state = { images: [] };
+
+    componentDidMount() {
+        this.onSearchSubmit('cars')
+    }
+
     onSearchSubmit = async (term) => {
         const response = await unsplash.get('/search/photos', {
         params: {query: term},
@@ -13,6 +18,7 @@ class App extends React.Component{
         });
         this.setState({ images : response.data.results});
     }
+
     render(){
         return (
             <div className="ui container" style={{marginTop: '10px'}}>
